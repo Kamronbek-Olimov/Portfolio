@@ -1,0 +1,140 @@
+.contact {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+}
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.contact .container h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+}
+.contact .container h2::after {
+  content: "";
+  background-color: #00abf0;
+  width: 100px;
+  border-radius: 5px;
+  height: 4px;
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+}
+.contact .container form {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact .container form .input-field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .container form .input-field input {
+  width: 49%;
+  outline: none;
+  border: 2px solid #00abf0;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.3rem;
+}
+.contact .container form textarea {
+  width: 100%;
+  height: 200px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  outline: none;
+}
+.contact .container form button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid #00abf0;
+  background-color: transparent;
+  color: #00abf0;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.contact .container form button::after {
+  content: "";
+  background: #00abf0;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.contact .container form button:hover {
+  color: #081b29;
+}
+.contact .container form button:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .contact .container h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .contact .container h2 {
+    font-size: 37px;
+  }
+  .contact .container form button::after {
+    background: transparent;
+  }
+  .contact .container form button:hover {
+    color: #00abf0;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container {
+    width: 100%;
+  }
+  .contact .container h2 {
+    font-size: 33px;
+  }
+  .contact .container form {
+    width: 100%;
+  }
+  .contact .container form .input-field {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .contact .container form .input-field input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .contact .container form textarea {
+    width: 100%;
+    height: 180px;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+  .contact .container form button {
+    width: 130px;
+  }
+}/*# sourceMappingURL=Contact.css.map */

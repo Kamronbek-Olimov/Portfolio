@@ -1,0 +1,180 @@
+.projects {
+  padding: 50px 0px;
+}
+.projects .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.projects .container h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+}
+.projects .container h2::after {
+  content: "";
+  background-color: #00abf0;
+  width: 100px;
+  border-radius: 5px;
+  height: 4px;
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+}
+.projects .container .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.projects .container .cards .card {
+  background-image: url(/public/countries-dark.webp);
+  background-color: #112e42;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+}
+.projects .container .cards .card h3 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #112e42;
+  background-color: #00abf0;
+  border-radius: 4px;
+}
+.projects .container .cards .card a {
+  position: absolute;
+  border: 2px solid #00abf0;
+  background-color: #00abf0;
+  color: #112e42;
+  width: 100px;
+  font-weight: 600;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .container .cards .card a:nth-child(2) {
+  width: 100px;
+}
+.projects .container .cards .card a:nth-child(3) {
+  width: 50px;
+  right: 15px;
+}
+.projects .container .cards .card:nth-child(2) {
+  background-image: url(/public/countries.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects .container .cards .card:nth-child(3) {
+  background-image: url(/public/christmas.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects .container .cards .card:nth-child(4) {
+  background-image: url(/public/invisible.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects .container .cards .card:nth-child(5) {
+  background-image: url(/public/weather.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects .container .cards .card:nth-child(6) {
+  background-image: url(/public/clock.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .projects .container {
+    row-gap: 30px;
+  }
+  .projects .container h2 {
+    font-size: 40px;
+  }
+  .projects .container .cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27px;
+  }
+  .projects .container .cards .card {
+    height: 280px;
+  }
+}
+@media (max-width: 992px) {
+  .projects .container h2 {
+    font-size: 37px;
+  }
+  .projects .container .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects .container .cards .card {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .projects .container h2 {
+    font-size: 35px;
+  }
+  .projects .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .container .cards .card {
+    height: 320px;
+  }
+}
+@media (max-width: 576px) {
+  .projects .container h2 {
+    font-size: 30px;
+  }
+  .projects .container h2::after {
+    width: 75px;
+  }
+  .projects .container .cards .card {
+    height: 270px;
+  }
+  .projects .container .cards .card h3 {
+    font-size: 17px;
+  }
+  .projects .container .cards .card a {
+    font-size: 12px;
+    bottom: 10px;
+  }
+  .projects .container .cards .card a:nth-child(2) {
+    width: 80px;
+  }
+  .projects .container .cards .card a:nth-child(3) {
+    width: 40px;
+    right: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .projects .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects .container .cards .card {
+    height: 300px;
+  }
+  .projects .container .cards .card a:nth-child(2) {
+    width: 100px;
+  }
+  .projects .container .cards .card a:nth-child(3) {
+    width: 60px;
+    right: 10px;
+  }
+}/*# sourceMappingURL=Projects.css.map */

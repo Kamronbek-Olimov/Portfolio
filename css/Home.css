@@ -1,0 +1,241 @@
+.home {
+  min-height: 100vh;
+  padding: 120px 0px 50px 0px;
+  display: flex;
+  align-items: center;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .container img {
+  width: 45%;
+}
+.home .container .home-info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.home .container .home-info h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.home .container .home-info .text-anime {
+  width: 32rem;
+  position: relative;
+}
+.home .container .home-info .text-anime h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #00abf0;
+}
+.home .container .home-info p {
+  font-size: 16px;
+}
+.home .container .home-info .box-btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.home .container .home-info .box-btn a {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00abf0;
+  letter-spacing: 1px;
+  font-size: 19px;
+  font-weight: 600;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.home .container .home-info .box-btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.home .container .home-info .box-btn a:hover::after {
+  width: 100%;
+}
+.home .container .home-info .box-btn a:hover {
+  color: #00abf0;
+}
+.home .container .home-info .box-btn a:nth-child(2) {
+  color: #00abf0;
+  background-color: transparent;
+}
+.home .container .home-info .box-btn a:nth-child(2)::after {
+  background: #00abf0;
+}
+.home .container .home-info .box-btn a:nth-child(2):hover::after {
+  color: #081b29;
+}
+.home .container .home-info .box-btn a:nth-child(2):hover {
+  color: #081b29;
+}
+.home .container .home-info .home-scl {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  bottom: 5%;
+  margin-top: 30px;
+}
+.home .container .home-info .home-scl a {
+  color: #00abf0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00abf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.home .container .home-info .home-scl a::after {
+  position: absolute;
+  content: "";
+  background-color: #00abf0;
+  width: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.home .container .home-info .home-scl a:hover::after {
+  width: 100%;
+}
+.home .container .home-info .home-scl a:hover {
+  color: #081b29;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    padding: 117px 0px 50px 0px;
+  }
+  .home .container .home-info h1 {
+    font-size: 40px;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 30px;
+  }
+  .home .container .home-info p {
+    font-size: 15px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -5%;
+  }
+}
+@media (max-width: 992px) {
+  .home .container .home-info h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .home .container .home-info p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .home .container .home-info .box-btn a {
+    width: 130px;
+  }
+  .home .container .home-info .box-btn a::after {
+    background: transparent;
+  }
+  .home .container .home-info .box-btn a:hover {
+    color: #000000;
+  }
+  .home .container .home-info .box-btn a:nth-child(2)::after {
+    background: transparent;
+  }
+  .home .container .home-info .box-btn a:nth-child(2):hover {
+    color: #00abf0;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -25%;
+  }
+  .home .container .home-info .home-scl a::after {
+    background: transparent;
+  }
+  .home .container .home-info .home-scl a:hover {
+    color: #00abf0;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    padding: 106.4px 0px 50px 0px;
+  }
+  .home .container .home-info {
+    width: 50%;
+  }
+  .home .container .home-info .box-btn a {
+    width: 100px;
+    font-size: 12px;
+  }
+  .home .container .home-info h1 {
+    font-size: 28px;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 26px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -30%;
+  }
+}
+@media (max-width: 576px) {
+  .home {
+    width: 100%;
+  }
+  .home .container {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .home .container img {
+    width: 100%;
+  }
+  .home .container .home-info {
+    width: 100%;
+    row-gap: 13px;
+  }
+  .home .container .home-info h1 {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .home .container .home-info .text-anime {
+    width: 100%;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 27px;
+  }
+  .home .container .home-info p {
+    font-size: 15px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -5%;
+  }
+}/*# sourceMappingURL=Home.css.map */
